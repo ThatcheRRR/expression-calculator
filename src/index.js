@@ -3,11 +3,6 @@ function eval() {
     return;
 }
 
-function eval() {
-    // Do not use eval!!!
-    return;
-}
-
 function expressionCalculator(expr) {
   let priority = {'*': 2, '/': 2, '+': 1, '-': 1, '(': 0, ')': 0, undefined: -1};
   let arr = expr.split(' '),
@@ -120,10 +115,6 @@ function expressionCalculator(expr) {
     throw Error ("TypeError: Division by zero.");
   }
   return result;
-}
-
-module.exports = {
-    expressionCalculator
 }
 
 module.exports = {
